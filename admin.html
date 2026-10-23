@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel Administrativo — Orange Futebol Clube Recife</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="img/escudo-laranja-grande.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="admin-shell">
+
+  <aside class="admin-side">
+    <a class="brand" href="index.html">
+      <img src="img/escudo-laranja-grande.png" alt="Escudo do Orange Futebol Clube Recife" style="width:38px;height:38px;">
+      <span class="brand__name">ORANGE FC<small>Painel Admin</small></span>
+    </a>
+    <nav>
+      <a href="admin.html" class="is-active">Notícias</a>
+      <a href="#" aria-disabled="true" title="Em breve">Galeria (em breve)</a>
+      <a href="#" aria-disabled="true" title="Em breve">Configurações (em breve)</a>
+      <a href="index.html">← Voltar ao site</a>
+    </nav>
+  </aside>
+
+  <div class="admin-main">
+    <div class="admin-topline">
+      <div>
+        <p class="eyebrow">Painel administrativo</p>
+        <h1 class="h2">Gerenciar notícias</h1>
+      </div>
+      <span class="admin-badge">Protótipo · dados salvos só neste navegador</span>
+    </div>
+
+    <p class="form-note" style="max-width:70ch; margin-bottom:2rem;">
+      Este painel é uma demonstração em HTML/CSS/JS puro: os itens abaixo são salvos no
+      <code>localStorage</code> do seu navegador, apenas para simular o fluxo de criar, editar
+      e excluir notícias. Ele ainda não publica automaticamente em <a href="noticias.html">noticias.html</a> —
+      para isso, será necessário ligar este formulário a um backend real (banco de dados + API,
+      ou um CMS como WordPress/Strapi) que gere as páginas de notícias dinamicamente.
+    </p>
+
+    <div class="admin-panels">
+
+      <div class="admin-card">
+        <h2 id="news-form-title">Nova notícia</h2>
+        <form id="news-form">
+          <input type="hidden" id="news-id">
+          <div class="form-grid">
+            <div class="field field--full">
+              <label for="news-title">Título</label>
+              <input type="text" id="news-title" required>
+            </div>
+            <div class="field">
+              <label for="news-category">Categoria</label>
+              <select id="news-category">
+                <option>Jogos</option>
+                <option>Institucional</option>
+                <option>Base</option>
+                <option>Torcida</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="news-date">Data</label>
+              <input type="date" id="news-date">
+            </div>
+            <div class="field field--full">
+              <label for="news-summary">Resumo (aparece nos cards)</label>
+              <textarea id="news-summary" style="min-height:80px;"></textarea>
+            </div>
+            <div class="field field--full">
+              <label for="news-content">Conteúdo completo</label>
+              <textarea id="news-content"></textarea>
+            </div>
+          </div>
+          <div style="display:flex; gap:1rem; margin-top:1.4rem;">
+            <button type="submit" class="btn btn--primary" id="news-submit">Publicar notícia</button>
+            <button type="button" class="btn btn--outline" id="news-cancel-edit" hidden>Cancelar edição</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="admin-card">
+        <h2>Notícias publicadas</h2>
+        <div id="news-list"></div>
+        <p class="admin-empty" id="news-empty" hidden>Nenhuma notícia publicada ainda.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
