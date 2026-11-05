@@ -12,27 +12,27 @@
   var SEED = [
     {
       id: 'seed-1',
-      titulo: 'Lorem ipsum dolor sit amet consectetur',
+      titulo: 'Notícia de exemplo — Jogos',
       categoria: 'Jogos',
       data: '2026-07-10',
-      resumo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
-      conteudo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      resumo: 'Resumo de exemplo para testar o painel.',
+      conteudo: 'Texto de exemplo para testar o painel.'
     },
     {
       id: 'seed-2',
-      titulo: 'Ut enim ad minim veniam quis nostrud',
+      titulo: 'Notícia de exemplo — Base',
       categoria: 'Base',
       data: '2026-07-05',
-      resumo: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
-      conteudo: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      resumo: 'Resumo de exemplo para testar o painel.',
+      conteudo: 'Texto de exemplo para testar o painel.'
     },
     {
       id: 'seed-3',
-      titulo: 'Duis aute irure dolor in reprehenderit',
+      titulo: 'Notícia de exemplo — Institucional',
       categoria: 'Institucional',
       data: '2026-06-28',
-      resumo: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.',
-      conteudo: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+      resumo: 'Resumo de exemplo para testar o painel.',
+      conteudo: 'Texto de exemplo para testar o painel.'
     }
   ];
 

@@ -1,7 +1,7 @@
 # Orange Futebol Clube Recife — Site (base HTML/CSS/JS)
 
 Base de projeto estático (sem framework, sem build step) para o site do Orange FC Recife.
-Todos os textos de parágrafo estão em **Lorem Ipsum** — é só substituir pelo conteúdo real do clube.
+Os textos institucionais já são os do clube. Notícias, equipe, galeria e próximo jogo ainda usam marcadores neutros ("Título da notícia", "Nome Sobrenome", "00/00/0000") — é só substituir pelo conteúdo real.
 
 ## Estrutura de arquivos
 
